@@ -1,0 +1,30 @@
+cron:
+- description: Brand Crawl
+  url: /mister_gadgetCron/v1/parseAll
+  schedule: every day 08:00
+  target: default
+
+- description: Brand Reinforce
+  url: /mister_gadgetCron/v1/parseReinforce
+  schedule: every day 11:00
+  target: default
+
+- description: Brand Check
+  url: /mister_gadgetCron/v1/checkReadyBrands
+  schedule: every day 14:00
+  target: default
+
+- description: Brand Crawl
+  url: /mister_gadgetCron/v1/parseAll
+  schedule: every day 17:00
+  target: default
+
+- description: Brand Reinforce
+  url: /mister_gadgetCron/v1/parseReinforce
+  schedule: every day 20:00
+  target: default
+
+- description: Once Per Day
+  url: /mister_gadgetCron/v1/once
+  schedule: every day 00:00
+  target: default
